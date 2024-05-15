@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  direction: rtl;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: right;
+}
+
+.zebraTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.zebraTable tr:hover {
+  background-color: #ddd;
+}
+
+.filter-button {
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  background-color: #191919;
+  color: #787878;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.filter-button:hover {
+  color: #23b7e5;
+}
+
+.filter-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}

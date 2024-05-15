@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Table Filter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <table
+      class="table zebraTable whitespace-nowrap table-bordered min-w-full overflow-x-auto"
+    >
+      <thead class="!bg-[#2E2E2E]">
+        <tr>
+          <th scope="col" class="text-start">ردیف</th>
+          <th scope="col" class="text-start">
+            <div class="flex items-center justify-between">
+              <span>فاکتور</span>
+              <div class="flex items-center gap-x-1">
+                <div data-type="factor" class="filter-button">فیلتر</div>
+              </div>
+            </div>
+          </th>
+          <th scope="col" class="text-start">
+            <div class="flex items-center justify-between">
+              <span>شماره</span>
+              <div class="flex items-center gap-x-1">
+                <div data-type="number" class="filter-button">فیلتر</div>
+              </div>
+            </div>
+          </th>
+          <th scope="col" class="text-start">
+            <div class="flex items-center justify-between">
+              <span>شناسه کاربر</span>
+              <div class="flex items-center gap-x-1">
+                <div data-type="userId" class="filter-button">فیلتر</div>
+              </div>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- ردیف‌های نمونه -->
+        <tr>
+          <td>1</td>
+          <td>Factor 1</td>
+          <td>123</td>
+          <td>User 1</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Factor 2</td>
+          <td>456</td>
+          <td>User 2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="filter-menu" class="filter-menu">
+      <!-- محتوا و گزینه‌های منوی فیلتر در اینجا قرار می‌گیرد -->
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
